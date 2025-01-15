@@ -10,7 +10,7 @@ locals {
 
 #RESOURCE BLOCK
 resource "azurerm_storage_account" "storage_tftec" {
-  name                     = "stgtftec1993terraform"
+  name                     = "stgtftec${random_string.random.result}"
   resource_group_name      = data.azurerm_resource_group.rg-portal.name
   location                 = data.azurerm_resource_group.rg-portal.location
   account_tier             = local.storage_account_sku
@@ -31,4 +31,11 @@ variable "account_replication_type" {
 #OUTPUT BLOCK
 output "storage_account_id" {
   value = azurerm_storage_account.storage_tftec.id
+}
+
+#RANDOM BLOCK
+resource "random_string" "random" {
+  length = 5
+  special = false
+  upper = false
 }
