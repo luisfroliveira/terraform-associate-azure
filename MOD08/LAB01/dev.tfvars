@@ -1,0 +1,11 @@
+rg_name     = "rg-tfcurso-linux"
+rg_location = "eastus"
+nsg_name    = "nsg-tfcurso-linux-01"
+vnet_name   = "vnet-tfcurso-linux-01"
+vnet_cidr   = ["10.0.0.0/16"]
+sub_name    = "sub-tfcurso-linux-01"
+sub_cidr    = ["10.0.1.0/24"]
+pip_name    = "pip-tfcurso-linux-01"
+nic_name    = "nic-tfcurso-linux-01"
+vm_name     = "vm-tfcurso-linux-01"
+sku_size    = "Standard_DS1_v2"
