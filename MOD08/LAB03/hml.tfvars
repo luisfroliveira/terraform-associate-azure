@@ -27,7 +27,7 @@ nsg_rules_02 = [
 ]
 
 vnet_name_02     = "vnet-tfcurso-linux-02"
-vnet_cidr_02     = ["10.0.2.0/24"]
+vnet_cidr_02     = ["10.0.2.0/16"]
 sub_names_02     = ["sub-01", "sub-02"]
 vm_count_02      = 2
 pip_name_02      = "pip-tfcurso-linux-02"
